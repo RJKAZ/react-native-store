@@ -1,15 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, TouchableNativeFeedback, View, Image, SafeAreaView } from 'react-native';
 
 export default function App() {
 
-  const handlePress = () => console.log("Text Pressed");
  
   return (
     <SafeAreaView style={styles.container}>
-      <Text numberOfLines={1} onPress={handlePress}>
-      Hello React Native - This a susseouhfiwfiuwehbfiuweiufhweiufbwiebfhiwbfiuwebfiwebiwebifbweifbweifbwibfiwebfiwbfiwbfibweifbwibfiwbfiwbfiwbefibwefibweifbwei </Text>
+      
       
     </SafeAreaView>
   );
@@ -18,7 +16,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'dodgerblue',
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+    alignItems: 'center',
     
   },
 });
